@@ -1,0 +1,27 @@
+.leagues {
+  padding: 30px 15px 30px 15px;
+}
+
+.leagues__wrapper {
+  padding-left: 15px;
+}
+
+.league {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $color-primary;
+  margin-bottom: 15px;
+  a {
+    display: block;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+}
+
+.block-shadowed {
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgb(0 0 0 / 5%);
+}
+.league__content {
+  padding: 15px;
+}

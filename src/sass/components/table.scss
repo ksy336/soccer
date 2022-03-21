@@ -1,0 +1,46 @@
+.table__wrapper {
+  padding: 30px 15px;
+  @include media-tablet {
+    padding: 15px 10px;
+  }
+  @include media-mobile {
+    padding: 30px 5px 20px;
+  }
+}
+.table {
+  display: flex;
+  justify-content: space-around;
+  @include media-mobile {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.row {
+  border: 2px solid $color-text;
+  border-radius: 5px;
+  padding: 10px 200px 10px 0;
+
+  @include media-tablet {
+    padding: 40px 10px 40px 10px;
+  }
+  @include media-mobile {
+    padding: 10px 3px 10px;
+  }
+}
+.row span {
+  @include media-tablet {
+    @include font($size: 2rem, $height: 2.0rem);
+  }
+}
+
+.table-content {
+  @include media-tablet {
+    flex-direction: column;
+  }
+}
+
+.table > * {
+  margin-top: 5px;
+  padding-top: 5px;
+  padding-right: 25px;
+}
