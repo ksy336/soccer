@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from './Navbar';
 import '../sass/App.scss';
@@ -10,8 +11,8 @@ function Header() {
           <span className="header__hamburger hamburger">
             <span className="hamburger__line" />
           </span>
-          <Link to="../../public/search-icon.jpg" className="logo">
-            <img src="../../public/search-icon.jpg" alt="logo" width="160px" />
+          <Link to="./../../public/images/soccer.svg" className="logo">
+            <img src={require('../../public/images/soccer.svg')} alt="logo" width="160px" />
           </Link>
         </div>
         <Navbar />

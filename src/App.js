@@ -1,3 +1,4 @@
+import React from 'react';
 import './sass/App.scss';
 import { BrowserRouter } from 'react-router-dom';
 import { Route, Routes } from 'react-router';
@@ -9,7 +10,7 @@ function App() {
     <BrowserRouter>
       {/* <Header /> */}
       <Routes>
-        <Route path="/leagues" element={<LeaguesPage />} />
+        <Route path="/" element={<LeaguesPage />} />
         <Route path="/teams" element={<TeamsPage />} />
       </Routes>
     </BrowserRouter>

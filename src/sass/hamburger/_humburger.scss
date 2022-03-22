@@ -1,33 +1,36 @@
 %hamburger-line {
-  content: "";
-  display: inline-block;
-  background: #173A56;
-  border-radius: 5px;
-  height: 3px;
-  width: 100%;
   position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  background: #173a56;
+  border-radius: 5px;
+  content: '';
 }
 
 .hamburger {
+  position: relative;
   display: none;
-  cursor: pointer;
   width: 36px;
   height: 31px;
-  position: relative;
-  margin-right: 35px;
   margin-top: 25px;
+  margin-right: 35px;
+  cursor: pointer;
 
   @include media-tablet {
     display: inline-block;
   }
 
-  &:after {
+  &::after {
     @extend %hamburger-line;
+
     top: 0;
     left: 0;
   }
-  &:before {
+
+  &::before {
     @extend %hamburger-line;
+
     bottom: 0;
     left: 0;
   }
@@ -35,12 +38,8 @@
 
 .hamburger__line {
   @extend %hamburger-line;
+
   top: calc(50% - 1.5px);
   left: 0;
 }
 
-.hamburger__line {
-  @extend %hamburger-line;
-  top: calc(50% - 1.5px);
-  left: 0;
-}

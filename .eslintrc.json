@@ -24,14 +24,21 @@
     ],
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "react-hooks/rules-of-hooks": "error",
-        "react-hooks/exhaustive-deps": "warn",
-        "comma-dangle": ["error", "only-multiline"],
-        "react/prop-types": "off",
-        "react/display-name": "off",
-        "prettier/prettier": ["error", { "endOfLine": "auto" }],
-        "react/jsx-uses-react": "off",
-        "react/react-in-jsx-scope": "off"
+//        "react-hooks/rules-of-hooks": "error",
+//        "react-hooks/exhaustive-deps": "warn",
+//        "comma-dangle": ["error", "only-multiline"],
+//        "react/prop-types": "off",
+//        "react/display-name": "off",
+//        "prettier/prettier": ["error", { "endOfLine": "auto" }],
+//        "react/react-in-jsx-scope": "off",
+        "react/jsx-uses-react": "error",
+        "no-underscore-dangle": "off",
+        "react/jsx-uses-vars": "error",
+        "camelcase": ["error", {
+            "properties": "always"
+        }],
+        "no-unused-vars": "off",
+        "global-require": 0
     },
     "settings": {
         "react": {

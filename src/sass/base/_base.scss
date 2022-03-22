@@ -13,8 +13,8 @@ h1 {
 
 h3 {
   @include font($size: 2.2rem, $height: 2.2rem);
-  text-align: center;
   color: $color-primary;
+  text-align: center;
   &:hover {
     color: $color-text;
   }
@@ -22,15 +22,16 @@ h3 {
 
 h4 {
   @include font($size: 1.8rem, $height: 2.2rem);
-  text-align: center;
   color: $color-primary;
+  text-align: center;
+
   &:hover {
     color: $color-text;
   }
 }
 
 h5 {
-  @include font($size: 1.6rem, $height: 2.0rem);
+  @include font($size: 1.6rem, $height: 2rem);
 }
 
 h6 {

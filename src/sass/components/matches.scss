@@ -1,4 +1,5 @@
-.matches-table, .matches {
+.matches-table,
+.matches {
   overflow: hidden;
 }
 
@@ -26,17 +27,17 @@
   padding-top: 30px;
   padding-left: 10px;
   @include media-tablet {
-    padding-left: 23px;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    padding-left: 23px;
   }
   @include media-mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
+
   input:focus {
     border: 2px solid $color-squareOrange;
     outline: none;

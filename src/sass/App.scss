@@ -1,43 +1,40 @@
-@import "base/normalize";
-@import "abstract/mixins";
-@import "abstract/constants";
-@import "abstract/placeholder";
-@import "base/base";
+@import 'base/normalize';
+@import 'abstract/mixins';
+@import 'abstract/constants';
+@import 'abstract/placeholder';
+@import 'base/base';
 
-@import "components/search";
-@import "components/leagues";
-@import "components/pagination";
-@import "components/matches";
-@import "components/table";
-@import "components/teams";
-@import "layout/wrapper";
-@import "layout/navigation";
-@import "layout/header";
-@import "layout/columns";
+@import 'components/search';
+@import 'components/leagues';
+@import 'components/pagination';
+@import 'components/matches';
+@import 'components/table';
+@import 'components/teams';
+@import 'layout/wrapper';
+@import 'layout/navigation';
+@import 'layout/header';
+@import 'layout/columns';
 
-@import "hamburger/humburger";
-
-
+@import 'hamburger/humburger';
 
 @font-face {
-  font-family: 'Gilroy-Bold';
+  font-family: Gilroy-Bold;
   src: url('../fonts/gilroy-bold.eot'); /* IE 9 Compatibility Mode */
-  src: url('../fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-  url('../fonts/gilroy-bold.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/gilroy-bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-  url('../fonts/gilroy-bold.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
+  src: url('../fonts/gilroy-bold.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/gilroy-bold.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/gilroy-bold.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/gilroy-bold.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/gilroy-bold.svg#gilroy-bold') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 @font-face {
-  font-family: 'Gilroy-Medium';
+  font-family: Gilroy-Medium;
   src: url('../fonts/gilroy-medium.eot'); /* IE 9 Compatibility Mode */
-  src: url('../fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-  url('../fonts/gilroy-medium.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/gilroy-medium.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-  url('../fonts/gilroy-medium.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
+  src: url('../fonts/gilroy-medium.eot?#iefix') format('embedded-opentype'),
+    /* IE < 9 */ url('../fonts/gilroy-medium.woff2') format('woff2'),
+    /* Super Modern Browsers */ url('../fonts/gilroy-medium.woff') format('woff'),
+    /* Firefox >= 3.6, any other modern browser */ url('../fonts/gilroy-medium.ttf')
+      format('truetype'),
+    /* Safari, Android, iOS */ url('../fonts/gilroy-medium.svg#gilroy-medium') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 
-body {
-  font-family: "Gilroy-Bold", sans-serif;
-}

@@ -1,34 +1,43 @@
-@mixin font ($size, $height: $size, $weight: bold, $style: normal) {
+@mixin font($size, $height: $size, $weight: bold, $style: normal) {
+  font-weight: $weight;
   font-size: $size;
   font-style: $style;
-  font-weight: $weight;
   line-height: $height;
 }
 
-
-@mixin columns ($width) {
+@mixin columns($width) {
   display: flex;
   justify-content: space-between;
-  >* {
+
+  > * {
     flex-basis: $width;
   }
 }
 
 // Для ноутбука 1197px
 @mixin media-laptop {
-  @media (max-width: $content-width) {@content;}
+  @media (max-width: $content-width) {
+    @content;
+  }
 }
+
 // Для планшета- 768px
 @mixin media-tablet {
-  @media (max-width: $tablet-width) {@content;}
+  @media (max-width: $tablet-width) {
+    @content;
+  }
 }
 
 // Для мобильного- 414px
 @mixin media-mobile {
-  @media (max-width: $mobile-big-width) {@content;}
+  @media (max-width: $mobile-big-width) {
+    @content;
+  }
 }
 
 // Для мобильного- 320px
 @mixin media-mobilesmall {
-  @media (max-width: $mobile-small-width) {@content;}
+  @media (max-width: $mobile-small-width) {
+    @content;
+  }
 }

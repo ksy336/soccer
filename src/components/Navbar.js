@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import '../sass/App.css';
 
@@ -6,7 +7,7 @@ function Navbar() {
     <nav className="header__navigation">
       <ul className="navigation">
         <li className="navigation__link">
-          <Link to="/leagues" className="navigation__anchor anchor__active">
+          <Link to="/" className="navigation__anchor anchor__active">
             Лиги
           </Link>
         </li>
