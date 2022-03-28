@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/Header';
+import Header from '../UI/Header';
 import '../sass/App.scss';
 
 function TeamsPage() {
