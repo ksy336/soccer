@@ -43,7 +43,8 @@ const config = {
         exclude: /node_modules/,
         use: [{loader: "eslint-loader",
           options: {
-            quiet: true
+            quiet: true,
+            transpileOnly:true
           }
         }],
       },
@@ -51,6 +52,9 @@ const config = {
         test: /\.(js|jsx)$/i,
         loader: 'ts-loader',
         exclude: ['/node_modules/'],
+        options: {
+          transpileOnly:true
+        }
       },
       {
         test: /\.css$/i,
@@ -72,6 +76,7 @@ const config = {
 };
 module.exports = {
   plugins: [new ESLintPlugin(), new StylelintPlugin()],
+  watch: true,
 }
 module.exports = () =>  {
   if (isProduction) {

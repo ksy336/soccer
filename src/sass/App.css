@@ -645,6 +645,28 @@ h6 {
   border-left-width: 1px;
 }
 
+.pages {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.page-span,
+.current-page {
+  border: 3px solid white;
+  border-radius: 100%;
+  padding: 10px 15px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.current-page {
+  border: 4px solid lightseagreen;
+  font-weight: 700;
+}
+
 .matches-table,
 .matches {
   overflow: hidden;
